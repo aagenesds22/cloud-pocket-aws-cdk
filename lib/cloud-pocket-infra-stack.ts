@@ -41,7 +41,6 @@ export class CloudPocketInfraStack extends Stack {
     const s3IntegrationListObjects = new AwsIntegration({
       service: 's3',
       integrationHttpMethod: 'GET',
-      path: `{bucket}`,
       action: 'ListBucket',
       subdomain: 'test-mediahstf',
       options: {
