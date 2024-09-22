@@ -82,7 +82,6 @@ export class CloudPocketInfraStack extends Stack {
       service: 's3',
       integrationHttpMethod: 'GET',
       path: 'test-mediahstf/{key}',
-      action: 'GetObject',
       options: {
         credentialsRole: executionRole,
         integrationResponses: [
